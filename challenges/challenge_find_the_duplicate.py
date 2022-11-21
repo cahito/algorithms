@@ -1,13 +1,8 @@
-# from typing import List
-
-
 def find_duplicate(nums: list):
     if len(nums) == 0 or len(nums) == 1:
         return False
 
-    # ordered_nums = order_word(nums)
     nums.sort()
-
     n = len(nums) - 1
     x = 0
     while x < n:
